@@ -1,0 +1,152 @@
+/* Driver styles */
+:root {
+  --primary-color: #000000;
+  --secondary-color: #FF1E00;
+  --text-color: #ffffff;
+  --font-family: 'Inter', sans-serif;
+}
+
+.driver-container {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  border-radius: 15px;
+}
+
+body {
+  height: 100%;
+  width: 100vw;
+  max-width: 100%;
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.driver-stats-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ddd;
+}
+
+/* Dropdown container */
+.dropdowns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Style for both driver dropdowns */
+#driver-select-1, 
+#driver-select-2 {
+  padding: 12px;
+  border-radius: 8px;
+  color: black;
+
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Container for driver cards to align them side by side */
+.driver-cards-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 700px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+/* Individual driver containers */
+#drivers-1, 
+#drivers-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#track-select{
+  border-radius: 8px;
+}
+/* Driver card styling */
+.driver-card {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+/*image of the driver*/
+.driver-card img {
+  width: 150px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.driver-details {
+  flex: 1;
+  text-align: start;
+}
+
+.driver-details p {
+  margin: 5px 0;
+  color: var(--secondary-color);
+}
+
+/* text details of the driver*/
+.driver-details p strong {
+  color: #333;
+}
+
+/* Stats container for both drivers */
+.stats-cards-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+/*text of season*/
+.season-stats-text{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+}
+
+/* Individual stats containers */
+#stats-1, 
+#stats-2 {
+  background-color: var(--text-color);
+  display: flex;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  height: auto;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+  color: var(--primary-color);
+}

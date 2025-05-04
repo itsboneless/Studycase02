@@ -1,0 +1,59 @@
+
+
+h1 {
+  
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+
+
+
+/* Navigation list styles */
+
+
+
+/* Stats Container */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Placeholder for missing image */
+.no-image {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
+/* race result cards*/
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#stats {
+  margin-top: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+}
+
+span {
+  font-weight: bold;
+  color: #000;
+}

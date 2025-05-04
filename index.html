@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 Dashboard - Driver Stats</title>
+  <link rel="stylesheet" href="./src/main.css" />
+  
+  <!-- Set race name in the header -->
+  <script type="module">
+    import { getRaceName } from './src/components/driverWithStats.js';
+    document.addEventListener("DOMContentLoaded", () => {
+      getRaceName().then(raceName => {
+        document.querySelector('.season-stats-text').textContent = raceName;
+      });
+    });
+  </script>
+
+  <!-- Render driver comparison -->
+  <script type="module">
+    import { renderDriverComparison } from './src/components/driverWithStats.js';
+    renderDriverComparison();
+  </script>
+
+  <!-- Render sidebar -->
+  <script type="module">
+    import { renderSidebar } from './src/components/sidebar.js';
+    renderSidebar();
+  </script>
+
+
+</head>
+<body>
+   <!-- Start Screen -->
+      <div id="start-screen" class="start-screen">
+        <button id="start-button">Start</button>
+      </div> 
+  
+<!-- Loader wrapper for the loading animation of F1-->
+    <div class="loader-wrapper">
+      <span class="loader"> </span>
+    </div>
+
+<!-- Main content area -->
+<div id="main-content" class="main-content">
+  <!-- Sidebar will be rendered here -->
+  <div id="sidebar-container"></div>
+
+  <!-- Main content -->
+  <div class="driver-container">
+    <h1 class="driver-stats-text">Driver Stats Comparison 2025</h1>
+    
+    <!-- Two dropdowns for selecting each driver -->
+    <div class="dropdowns">
+      <select id="driver-select-1"></select>
+      <select id="driver-select-2"></select>
+      <select id="track-select">
+        <option value="" disabled selected>Select a race</option>
+      </select>
+    </div>
+    <!-- Container for the two driver cards displayed side by side -->
+    <div class="driver-cards-container">
+      <div id="drivers-1"></div>
+      <div id="drivers-2"></div>
+    </div>
+    <!-- Two separate stats containers -->
+    <div class="stats-cards-container">
+      <div id="stats-1"></div>
+      <div id="stats-2"></div>
+    </div>
+   
+  </div>
+  <script>
+    window.addEventListener("load", function () {
+      function startSequence() {
+        document.removeEventListener("click", startSequence);
+        document.getElementById("start-screen").style.display = "none";
+
+        const loader = document.querySelector(".loader-wrapper");
+        loader.style.display = "block";
+
+        // Play heartbeat sound
+        let audio = new Audio('./src/sound/heartbeat.mp3');
+        audio.loop = true;
+        audio.play().catch(error => console.error("Audio play failed:", error));
+
+        // After 5800ms, hide loader and show video
+        setTimeout(function () {
+          loader.style.display = "none";
+          audio.pause();
+          audio.currentTime = 0;
+
+          const video = document.createElement("video");
+          video.src = "./src/video/intro.mp4";
+          video.autoplay = true;
+          video.controls = false;
+          video.loop = false;
+          video.classList.add("fullscreen-video");
+          document.body.appendChild(video);
+
+          video.addEventListener("ended", function () {
+            video.remove();
+            document.getElementById("main-content").style.display = "block";
+            document.getElementById("sidebar-container").style.display = "block";
+          });
+        }, 5800);
+      }
+
+      document.addEventListener("click", startSequence);
+      document.getElementById("start-button").addEventListener("click", startSequence);
+    });
+  </script>
+</body>
+</html>

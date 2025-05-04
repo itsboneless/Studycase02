@@ -1,0 +1,54 @@
+/* sidebar styles */
+.nav-container .nav-item{
+    display: flex;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+  }
+  .nav-container {
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 15px;
+     border-width: 0px 1px 0px 0px;
+    border-style : solid ;
+    border-color: var(--text-color);
+   
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-item{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  
+  }
+  .nav-item .tooltip{
+   display: flex;
+  color: #000;
+  } 
+  
+  .nav-divider{
+    width: 100%;
+    color:white;
+    background-color: var(--text-color);
+    margin: 20px 0;
+  }
+  .nav-item:hover .tooltip{
+    color:#FF1E00;
+    display: flex;
+  }
+  
+  .nav-item:hover .nav-icon{
+    cursor:pointer;
+  }
+  /* sidebar end */
+  
+  

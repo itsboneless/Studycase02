@@ -1,0 +1,72 @@
+@import url('./styles/style.css');
+@import url('./styles/map.css');
+@import url('./styles/nav.css');
+@import url('./styles/driver.css');
+@import url('./styles/loader.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: 'Formula1';
+    src: url('./fonts/Formula1-Regular_web_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formula1';
+    src: url('./fonts/Formula1-Bold_web_0.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Formula1', sans-serif;
+    font-weight: bold; 
+}
+
+p {
+    font-family: 'Formula1', sans-serif;
+    font-weight: normal; 
+}
+
+/* Global styles */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #FF1E00;
+    --text-color: #ffffff;
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+    max-width: 100%;
+    background-color: var(--primary-color);
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+}
+
+.main-content {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 80px;
+}
+
+.section-container {
+    height: 100%;
+    width: 80%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
