@@ -100,7 +100,7 @@ export function renderDriverComparison() {
     if (driver) {
       let lastName = driver.Driver.familyName.toLowerCase();
       let imageFilename = driverImageMap[lastName] || "default.png"; 
-      let imagePath = `./src/images/${imageFilename}`; // Ens
+      let imagePath = `images/${imageFilename}`; // Ens
       // Build the driver card
       const card = document.createElement('div');
     
@@ -173,24 +173,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const driverImageMap = {
-  "albon": "./drivers_2025/alealb01.png",
-  "antonelli": "./drivers_2025/andant01.png",
-  "sainz": "./drivers_2025/carsai01.png",
-  "leclerc": "./drivers_2025/chalec01.png",
-  "ocon": "./drivers_2025/estoco01.png",
-  "alonso": "./drivers_2025/feralo01.png",
-  "bortoleto": "./drivers_2025/gabbor01.png",
-  "russell": "./drivers_2025/georus01.png",
-  "hadjar": "./drivers_2025/isahad01.png",
-  "doohan": "./drivers_2025/jacdoo01.png",
-  "norris": "./drivers_2025/lannor01.png",
-  "stroll": "./drivers_2025/lanstr01.png",
-  "hamilton": "./drivers_2025/lewham01.png",
-  "lawson": "./drivers_2025/lialaw01.png",
-  "verstappen": "./drivers_2025/maxver01.png",
-  "hülkenberg": "./drivers_2025/nichul01.png",
-  "bearman": "./drivers_2025/olibea01.png",
-  "piastri": "./drivers_2025/oscpia01.png",
-  "gasly": "./drivers_2025/piegas01.png",
-  "tsunoda": "./drivers_2025/yuktsu01.png"
+  "albon": "/drivers_2025/alealb01.png",
+  "antonelli": "/drivers_2025/andant01.png",
+  "sainz": "/drivers_2025/carsai01.png",
+  "leclerc": "/drivers_2025/chalec01.png",
+  "ocon": "/drivers_2025/estoco01.png",
+  "alonso": "/drivers_2025/feralo01.png",
+  "bortoleto": "/drivers_2025/gabbor01.png",
+  "russell": "/drivers_2025/georus01.png",
+  "hadjar": "/drivers_2025/isahad01.png",
+  "doohan": "/drivers_2025/jacdoo01.png",
+  "norris": "/drivers_2025/lannor01.png",
+  "stroll": "/drivers_2025/lanstr01.png",
+  "hamilton": "/drivers_2025/lewham01.png",
+  "lawson": "/drivers_2025/lialaw01.png",
+  "verstappen": "/drivers_2025/maxver01.png",
+  "hülkenberg": "/drivers_2025/nichul01.png",
+  "bearman": "/drivers_2025/olibea01.png",
+  "piastri": "/drivers_2025/oscpia01.png",
+  "gasly": "/drivers_2025/piegas01.png",
+  "tsunoda": "/drivers_2025/yuktsu01.png"
 };

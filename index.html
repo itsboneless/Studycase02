@@ -80,7 +80,7 @@
         loader.style.display = "block";
 
         // Play heartbeat sound
-        let audio = new Audio('src/sound/heartbeat.mp3');
+        let audio = new Audio('./src/sound/heartbeat.mp3');
         audio.loop = true;
         audio.play().catch(error => console.error("Audio play failed:", error));
 
@@ -91,7 +91,7 @@
           audio.currentTime = 0;
 
           const video = document.createElement("video");
-          video.src = "src/video/intro.mp4";
+          video.src = "./src/video/intro.mp4";
           video.autoplay = true;
           video.controls = false;
           video.loop = false;

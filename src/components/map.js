@@ -41,7 +41,7 @@ export function renderMap() {
         if (Location) {
           let coordinates = [parseFloat(Location.long), parseFloat(Location.lat)];
           let imageFilename = circuitImageMap[circuit.circuitId] || "default.svg"; // Fallback image
-          let imagePath = `./images/Tracks_2025/${imageFilename}`;
+          let imagePath = `images/Tracks_2025/${imageFilename}`;
 
           var element = document.createElement('div');
           element.id = 'marker';
