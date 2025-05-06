@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>F1 Dashboard - Driver Stats</title>
-  <link rel="stylesheet" href="/src/main.css" />
+  <link rel="stylesheet" href="./src/main.css" />
   
   <!-- Set race name in the header -->
   <script type="module">
-    import { getRaceName } from 'src/components/driverWithStats.js';
+    import { getRaceName } from './src/components/driverWithStats.js';
     document.addEventListener("DOMContentLoaded", () => {
       getRaceName().then(raceName => {
         document.querySelector('.season-stats-text').textContent = raceName;
@@ -18,13 +18,13 @@
 
   <!-- Render driver comparison -->
   <script type="module">
-    import { renderDriverComparison } from '/src/components/driverWithStats.js';
+    import { renderDriverComparison } from './src/components/driverWithStats.js';
     renderDriverComparison();
   </script>
 
   <!-- Render sidebar -->
   <script type="module">
-    import { renderSidebar } from '/src/components/sidebar.js';
+    import { renderSidebar } from './src/components/sidebar.js';
     renderSidebar();
   </script>
 

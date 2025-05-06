@@ -7,7 +7,7 @@
   <!-- Styling for the driver stylesheet  -->
   <link rel="stylesheet" href="src/main.css" />
     <script type="module">
-      import { getRaceName } from 'src/components/driverWithStats.js';
+      import { getRaceName } from './src/components/driverWithStats.js';
       document.addEventListener("DOMContentLoaded", () => {
         getRaceName().then(raceName => {
           document.querySelector('.season-stats-text').textContent = raceName;
@@ -16,12 +16,12 @@
     </script>
   <!-- Render driver component -->
   <script type="module">
-    import { renderDriverComparison } from 'src/components/driverWithStats.js';
+    import { renderDriverComparison } from './src/components/driverWithStats.js';
     renderDriverComparison();
    </script>
    <!-- Render shared Sidebar -->
    <script type="module">
-   import { renderSidebar } from 'src/components/sidebar.js';
+   import { renderSidebar } from './src/components/sidebar.js';
     renderSidebar();
   </script>
 </head>
