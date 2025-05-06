@@ -14,19 +14,19 @@ export function renderSidebar() {
     <nav class="nav-container">
       
         <li id="nav-logo" class="nav-item">
-          <img src="./src/images/F1Logo.svg" alt="Logo Icon" class="nav-icon" />
+          <img src="images/F1Logo.svg" alt="Logo Icon" class="nav-icon" />
           
         </li>
         
         <hr class="nav-divider">
 
           <li id="nav-drivers" class="nav-item">
-          <img src="./src/images/DriversIcon.svg" alt="Drivers Icon" class="nav-icon" />
+          <img src="images/DriversIcon.svg" alt="Drivers Icon" class="nav-icon" />
           <p class="tooltip">Drivers</p>
         </li>
 
          <li id="nav-home" class="nav-item">
-          <img  src="./src/images/GlobeIcon.svg" alt="Globe Icon" class="nav-icon" />
+          <img  src="images/GlobeIcon.svg" alt="Globe Icon" class="nav-icon" />
           <p class="tooltip">Grand prix</p>
         </li>
 
