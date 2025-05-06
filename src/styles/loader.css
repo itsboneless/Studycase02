@@ -59,7 +59,7 @@
 .loader {
     width: 150px;
     height: 150px;
-    background-image: url('images/F1Logo.svg');
+    background-image: url('/images/F1Logo.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

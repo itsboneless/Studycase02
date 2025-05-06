@@ -34,7 +34,7 @@
     border-radius: 15px;
  }
  #marker {
-    background-image: url("images/TracksIcon.svg");
+    background-image: url("/images/TracksIcon.svg");
     background-size: cover;
     width: 16px; 
     height: 16px;
